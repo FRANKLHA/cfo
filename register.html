@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+</head>
+
+<body>
+    
+    <div class="conteiner-login">
+        <form class="form-login" action="register.php" method="POST">
+            <fieldset>
+                <h3>Registrarse</h3>
+                <div class="conteiner">
+                    <ion-icon name="person"></ion-icon>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="conteiner">
+                    <ion-icon name="mail"></ion-icon>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="conteiner">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </div>
+                <div class="boton-envia">
+                    <input type="submit" value="Registrarse">
+                </div>
+                <div class="login">
+                    <p>¿Ya tienes una cuenta?<a href="loginframe.html"> Iniciar Sesión</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        
+</body>
+
+</html>

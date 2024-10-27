@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEFOISA</title>
+    
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+
+</head>
+
+<body>
+   
+    <div class="conteiner-login">
+        <form class="form-login" action="procesar_login.php" method="POST">
+            <fieldset>
+                <h3>Iniciar Sesión</h3>
+                <div class="conteiner">
+                    <ion-icon name="mail"></ion-icon>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="email" required>
+                </div>
+                <div class="conteiner">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="pass" required>
+                </div>
+               
+                <div class="remember-me">
+                    <label for="#"><input type="checkbox">Recordarme</label>
+                    <a href="#">Has olvidado tu contraseña</a>
+                </div>
+                <div class="boton-envia">
+                    <input type="submit" value="Ingresar">
+                </div>
+                <div class="register">
+                    <p>No tienes una cuenta.<a href="register.php">Registrate</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+   
+  
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEFOISA</title>
+   
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+</head>
+<body>
+    <div class="contenedor-contacto">
+        <form class="form-contacto" method="get" action="procesar_Contacto.php">
+
+            <h1>¡Estamos a su disposición!</h1>
+            <p>Rellene este formulario o llámenos al teléfono: <strong>915347242.</strong></p>
+
+            <div class="form-columnas">
+                <div class="form-columna">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" maxlength="25" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" maxlength="30" name="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico de trabajo:</label>
+                        <input type="email" id="email" maxlength="100" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" id="telefono" maxlength="15" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" maxlength="26" name="pais" required>
+                    </div>
+                </div>
+                <div class="form-columna">
+                    <div class="form-group">
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" name="fecha" maxlength="8" title="fecha de nacimiento" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Mensaje">Comentario:</label>
+                        <textarea rows="4" name="datos" maxlength="800"></textarea>
+                        <br />
+                        <label for="amor">¿Del 1 al 10, cuánto nos quieres?:</label>
+                        <input type="number" min="1" max="10" required name="amor" />
+                    </div>
+                </div>
+                <div class="boton-envia">
+                    <input type="submit" value="ENVIAR">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html">
+                </div>
+            </div>
+        </form>
+    </div>
+   
+</body>
+
+</html>
